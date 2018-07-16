@@ -48,25 +48,24 @@
  </div>
 
     <div class="slideshow-container">
-      <div class="eventSlides slide-right">
-        <div style=" display:block;position:absolute;padding: 50px 180px 30px 250px; text-align:center; color:#FFF000; z-index:0;">
-        <h1> ICSNR3</h1>
+      <div class="eventSlides slide-right" style="text-align:center;">
+       <div style=" display:block;position:absolute;padding-left: 25%;text-align:center; color:#FFF000; z-index:0;">
+        <p style="font-size:3em;font-weight:600;"> ICSNR3</h1>
           <h2> 3rd International Conference on Science and Natural Resources<br/>
           Grand Borneo Hotel<br/>
           Kota Kinabalu, April 2018</h2></div>
         <img src="images/d88fa4_3dd5b15560ee4eeda56ed8c3c58243a1mv2.jpg" style="object-fit:fill; width=100%; height:300px; z-index:-1;">
       </div>
-      <div class="eventSlides slide-right" style="display:block;background-color:#0065A9; z-index:0; height:300px;padding-top:0px;" >
+      <div class="eventSlides slide-right" style="display:block;background-color:#0065A9; z-index:0; height:300px;padding-top:20px;" >
        <div style="text-align:center;color:white; display:block;padding-top:10px; padding-bottom:10px;">
-       <p style="font-size:7em; text-decoration:underline;padding-bottom:0px;margin:0px;">UniSE</p>
-       <p style="font-size:3.2em; padding-top:0px; padding-bottom:0px;margin-top:0px;">International</p>
+       <img src="images/d88fa4_fed752103e53409baf5aeb3c62d0e18emv2.jpg">
        <p style="font-size:1.3em;font-style:italic;padding:0px;margin:0px;">Bridging Scientist and Engineers with Industries and Public</p>
        </div>
       </div>
-      <div class="eventSlides slide-right" style="display:block; padding:10px 200px 10px 180px; background-color:white; z-index:0;"  >
-        <img src="images/d88fa4_72dfb980b9f24a079c730aa782d6e98amv2.jpg" style="float:left; padding: 20px 20px 10px 15px;">
+      <div class="eventSlides slide-right" style="display:block; padding:10px 200px 20px 180px; background-color:white; z-index:0;"  >
+        <img src="images/d88fa4_72dfb980b9f24a079c730aa782d6e98amv2.jpg" style="float:left; padding: 20px;">
         <div style="display:grid; text-align:left;">
-        <img src="images/d88fa4_c5725baf6cb842a08ec81d63252296cdmv2.jpg" style="margin-top:0px; padding-top: 20px;">
+        <img src="images/d88fa4_c5725baf6cb842a08ec81d63252296cdmv2.jpg" style="margin-top:0px; padding: 20px;">
         <h2 style="color:black; padding-top:30px;"> International Congress on Science and Technology</h2>
         <h2 style="color: #0065A9; padding-bottom:14px;"> 8th -11th December 2017, Bali, Indonesia</h2>
         </div>
@@ -77,6 +76,7 @@
        <span class="dot"></span>
       </div>
     </div>
+
   <div class="info-section" style="background-color: white; padding:20px;">
     <p style="display:inline-block; margin-left: 300px;color:white; background-color:#E36019; font-size:1.5em;">
       Our Conference & Congress </p>
@@ -142,26 +142,27 @@
 
   </div>
 
- <script>
- var slideIndex = 0;
- showSlides();
+  <script>
+  var slideIndex = 0;
+  showSlides();
 
- function showSlides() {
-     var i;
-     var slides = document.getElementsByClassName("eventSlides");
-     var dots = document.getElementsByClassName("active");
-     for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-     }
-     slideIndex++;
-     if (slideIndex > slides.length) {slideIndex = 1}
-     for (i = 0; i < dots.length; i++) {
-         dots[i].className = dots[i].className.replace("active", "");
-     }
-     slides[slideIndex-1].style.display = "block";
-     dots[slideIndex-1].className += "active";
-     setTimeout(showSlides, 5000);
- }
- </script>
+  function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("eventSlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace (" dot-active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " dot-active" ;
+      setTimeout(showSlides, 5000);
+  }
+  </script>
+
 </body>
 </html>

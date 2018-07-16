@@ -55,7 +55,7 @@
      </div>
 
      <div class="eventSlides slide-right" style="display:block; padding:10px 200px 10px 180px; background-color:white; z-index:0;height:300px;"  >
-       <img src="images/d88fa4_f677e0bd6d184230aad814dff480c0c1mv2.jpg" style="float:left; padding: 20px 20px 10px 15px; height:250;">
+       <img src="images/d88fa4_f677e0bd6d184230aad814dff480c0c1mv2.jpg" style="float:left; padding: 20px 20px 10px 15px; height:90%;">
        <div style="display:grid; text-align:left;">
          <h3 style="color:black; padding-top:0px; padding-bottom:0px;margin-bottom:0px;">
            2nd International Congress on Science and Technology</h3>
@@ -120,27 +120,27 @@
         </div>
 
       </div>
-<script>
-var slideIndex = 0;
-showSlides();
+      <script>
+      var slideIndex = 0;
+      showSlides();
 
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("eventSlides");
-    var dots = document.getElementsByClassName ("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace("active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += "active";
-    setTimeout(showSlides, 5000);
-}
-</script>
+      function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("eventSlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace (" dot-active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " dot-active" ;
+          setTimeout(showSlides, 5000);
+      }
+      </script>
 
 
 </body>

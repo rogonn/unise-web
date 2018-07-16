@@ -46,13 +46,9 @@
      <a href="unisern.html">UniSERN</a>
    </div>
    <div class="slideshow-container">
-       <div class="eventSlides slide-right" style="display:block;background-color:#0065A9; z-index:0; height:300px;padding-top:20px;" >
+       <div class="eventSlides slide-right" style="display:block;background-color:#0065A9; z-index:0; height:300px;padding:20px auto 10px auto;" >
         <div style="text-align:center;color:white; display:block;padding-top:10px; padding-bottom:10px;">
-<<<<<<< HEAD
-        <img src="/home/gurl3va/unise/images/d88fa4_fed752103e53409baf5aeb3c62d0e18emv2.jpg">
-=======
         <img src="images/d88fa4_fed752103e53409baf5aeb3c62d0e18emv2.jpg">
->>>>>>> 08ee3bbfc7386e5dbda77766b59d703e4a76903e
         <p style="font-size:1.3em;font-style:italic;padding:0px;margin:0px;">Bridging Scientist and Engineers with Industries and Public</p>
         </div>
        </div>
@@ -61,11 +57,7 @@
        <p style="color:white; font-weight: 700px; font-size: 6em; margin:0px;"> ICBAR 2018</p>
          <p style="color:#BD1515; text-transform: capitalize; font-size:1.8em;margin:0px;padding:0px;"> International Conference on Basic & Advanced Research </h3>
          <p style="color:#BD1515;font-size:1.4em;margin:0px;padding:0px;"> Taoyuan City, Taiwan<br/>21st-23rd September, 2018 <br/></h4></div>
-<<<<<<< HEAD
-       <img src="/home/gurl3va/unise/images/d88fa4_0ade4afb05a4480c9daee41062d162a1mv2_d_1920_1200_s_2.jpg" style="object-fit:fill; width=100%; height:300px; z-index:-1;">
-=======
        <img src="images/d88fa4_0ade4afb05a4480c9daee41062d162a1mv2_d_1920_1200_s_2.jpg" style="object-fit:fill; width=100%; height:300px; z-index:-1;">
->>>>>>> 08ee3bbfc7386e5dbda77766b59d703e4a76903e
      </div>
 
      <div style="text-align:center;">
@@ -327,27 +319,27 @@
       </div>
 
     </div>
-<script>
-var slideIndex = 0;
-showSlides();
+    <script>
+    var slideIndex = 0;
+    showSlides();
 
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("eventSlides");
-    var dots = document.getElementsByClassName ("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("eventSlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace (" dot-active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " dot-active" ;
+        setTimeout(showSlides, 5000);
     }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace("active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += "active";
-    setTimeout(showSlides, 5000);
-}
-</script>
+    </script>
 
 
 </body>

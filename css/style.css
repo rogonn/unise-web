@@ -65,8 +65,8 @@ body{
 }
 
 .header-container{
-  margin:0px 180px 0px 180px;
-  display:inline-block;
+  margin:0px 200px 0px 180px;
+  display:block;
   background-image: url(../images/d88fa4_f48e9f50b29247939fca75b06c3d6d7b.jpg);
 }
 
@@ -159,6 +159,8 @@ body{
   z-index: 0;
   position:relative;
 }
+
+
 .slide-right{
   position:relative;
   animation:animateright 0.4s;
@@ -181,7 +183,7 @@ body{
 .dot {
   height: 10px;
   width: 10px;
-  margin: 2px;
+  margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -190,6 +192,10 @@ body{
 
 .dot:hover {
   cursor: pointer;
+}
+
+
+.dot-active {
   background-color: black;
 }
 
