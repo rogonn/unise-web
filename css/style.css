@@ -67,7 +67,11 @@ body{
 .header-container{
   margin:0px 180px 0px 180px;
   display:inline-block;
+<<<<<<< HEAD
   background-image: url("/home/gurl3va/unise/images/d88fa4_f48e9f50b29247939fca75b06c3d6d7b.jpg")
+=======
+  background-image: url("images/d88fa4_f48e9f50b29247939fca75b06c3d6d7b.jpg")
+>>>>>>> 08ee3bbfc7386e5dbda77766b59d703e4a76903e
 }
 
 .header-title{
