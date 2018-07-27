@@ -109,17 +109,15 @@ body{
 
 .system{
   display:block;
-  background-color:rgba(0,0,0, 0.2);
-  padding:5%;
-  color:black;
+  font-size: 0.8em;
   text-align: justify;
-  font-size:0.8em;
 }
 
 .system-pic{
   border-radius: 0.6em;
   margin:5% 10% 5% 10%;
   width:80%;
+  background-color: #7995bf;
 }
 
 .place-pic{
@@ -393,14 +391,18 @@ tr:hover {
     margin:2%;
   }
 
+  .system{
+    display:flex;
+  }
+
   .system-info{
-    width:65%;
     float:right;
   }
 
   .system-pic{
     float: left;
-    width:30%;
+    width:173px;
+    height:173px;
     margin:2%;
   }
 
