@@ -100,11 +100,28 @@ body{
   text-align: center;
   font-weight: 600;
 }
+
 .infos{
   color: #515151;
   font-size: 0.8em;
   text-align: justify;
 }
+
+.system{
+  display:block;
+  background-color:rgba(0,0,0, 0.2);
+  padding:5%;
+  color:black;
+  text-align: justify;
+  font-size:0.8em;
+}
+
+.system-pic{
+  border-radius: 0.6em;
+  margin:5% 10% 5% 10%;
+  width:80%;
+}
+
 .place-pic{
   border-radius: 0.6em;
   margin:5% 10% 5% 10%;
@@ -373,6 +390,17 @@ tr:hover {
   .place-pic{
     float: left;
     width:auto;
+    margin:2%;
+  }
+
+  .system-info{
+    width:65%;
+    float:right;
+  }
+
+  .system-pic{
+    float: left;
+    width:30%;
     margin:2%;
   }
 
