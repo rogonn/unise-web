@@ -23,7 +23,7 @@ body{
 
 .dropdown {
     float: left;
-    padding: 10px 15px 0px 15px;
+    padding: 18px 15px 0px 15px;
 }
 
 .dropdown .dropbtn {
@@ -341,7 +341,6 @@ tr:hover {
 @media (min-width: 600px){
   .navbar {
     display:block;
-    padding: 10% 10% 0px 10%;
   }
 
   .navbar a {
