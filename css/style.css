@@ -298,9 +298,9 @@ tr:hover {
 .slide-icbar{
   display:block;
   position:absolute;
-  padding: 5%;
   text-align:center;
   z-index:0;
+  width: 100%;
 }
 
 .slide-icbar-title{
@@ -314,9 +314,9 @@ tr:hover {
 .slide-icsnr{
   display:block;
   position:absolute;
-  padding: 5%;
   text-align:center;
   z-index:0;
+  width:100%;
 }
 
 .slide-icsnr-title{
@@ -464,10 +464,6 @@ tr:hover {
     text-align:center;
   }
 
-  .slide-icbar{
-    position:absolute;
-    padding: 2% 15% 5% 15%;
-  }
 
   .slide-icbar-title{
     font-size: 4em;
@@ -482,10 +478,6 @@ tr:hover {
     width: 60%;
   }
 
-  .slide-icsnr{
-    position:absolute;
-    padding: 2% 15% 5% 15%;
-  }
 
   .slide-icsnr-title{
     font-size: 4em;
